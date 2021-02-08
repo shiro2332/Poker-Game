@@ -74,7 +74,8 @@ public class loadingController {
 	
 	
 	@FXML
-	public void initialize() {	
+	public void initialize() {
+		cmdLogger.log("===============================Loading Screen initialized===============================");
 		currentSession = gameSession.getSession();
 
 		ImageView[] player0 = { player1card1, player1card2, player1card3, player1card4, player1card5 };
@@ -125,6 +126,8 @@ public class loadingController {
 
 	@FXML
 	void onBackDeckShowPlayer1(ActionEvent event) {
+		cmdLogger.logActionByUser("player 1 back button clicked", "loadingController");
+		cmdLogger.log("===============================Event updated===============================");
 		if (p1CardRound > 0) {
 			p1CardRound -= 5;
 			for (int cardDisplayIndex = 0; cardDisplayIndex < imageViewID[0].length; cardDisplayIndex++) {
@@ -139,6 +142,8 @@ public class loadingController {
 
 	@FXML
 	void onBackDeckShowPlayer2(ActionEvent event) {
+		cmdLogger.logActionByUser("player 2 back button clicked", "loadingController");
+		cmdLogger.log("===============================Event updated===============================");
 		if (p2CardRound > 0) {
 			p2CardRound -= 5;
 			for (int cardDisplayIndex = 0; cardDisplayIndex < imageViewID[0].length; cardDisplayIndex++) {
@@ -153,6 +158,8 @@ public class loadingController {
 
 	@FXML
 	void onBackDeckShowPlayer3(ActionEvent event) {
+		cmdLogger.logActionByUser("player 3 back button clicked", "loadingController");
+		cmdLogger.log("===============================Event updated===============================");
 		if (p3CardRound > 0) {
 			p3CardRound -= 5;
 			for (int cardDisplayIndex = 0; cardDisplayIndex < imageViewID[0].length; cardDisplayIndex++) {
@@ -167,6 +174,8 @@ public class loadingController {
 
 	@FXML
 	void onNextDeckShowPlayer1(ActionEvent event) {
+		cmdLogger.logActionByUser("player 1 next button clicked", "loadingController");
+		cmdLogger.log("===============================Event updated===============================");
 		if (p1CardRound / 5 < 3) {
 			p1CardRound += 5;
 			for (int cardDisplayIndex = 0; cardDisplayIndex < imageViewID[0].length; cardDisplayIndex++) {
@@ -182,6 +191,8 @@ public class loadingController {
 
 	@FXML
 	void onNextDeckShowPlayer2(ActionEvent event) {
+		cmdLogger.logActionByUser("player 2 next button clicked", "loadingController");
+		cmdLogger.log("===============================Event updated===============================");
 		if (p2CardRound / 5 < 3) {
 			p2CardRound += 5;
 			for (int cardDisplayIndex = 0; cardDisplayIndex < imageViewID[0].length; cardDisplayIndex++) {
@@ -196,6 +207,8 @@ public class loadingController {
 
 	@FXML
 	void onNextDeckShowPlayer3(ActionEvent event) {
+		cmdLogger.logActionByUser("player 3 next button clicked", "loadingController");
+		cmdLogger.log("===============================Event updated===============================");
 		if (p3CardRound / 5 < 3) {
 			p3CardRound += 5;
 			for (int cardDisplayIndex = 0; cardDisplayIndex < imageViewID[0].length; cardDisplayIndex++) {
@@ -210,6 +223,8 @@ public class loadingController {
 
 	@FXML
 	void onStartButtonClick(ActionEvent event) {
+		cmdLogger.logActionByUser("start button clicked", "loadingController");
+		cmdLogger.log("===============================Event updated===============================");
 		SceneHandler sceneHandler = new SceneHandler("gameScreen.fxml", (Stage) ((Node) event.getSource()).getScene().getWindow());
 		try {
 			sceneHandler.showWindow();
@@ -221,7 +236,8 @@ public class loadingController {
 	@FXML
 	void onShuffleButtonClick(ActionEvent event) {
 		cmdLogger.logActionByUser("shuffle button clicked", "loadingController");
-
+		cmdLogger.log("===============================Event updated===============================");
+		
 		ImageView[] player0 = { player1card1, player1card2, player1card3, player1card4, player1card5 };
 		ImageView[] player1 = { player2card1, player2card2, player2card3, player2card4, player2card5 };
 		ImageView[] player2 = { player3card1, player3card2, player3card3, player3card4, player3card5 };
@@ -235,6 +251,11 @@ public class loadingController {
 
 		CardHandler cardHandler = new CardHandler();
 		cardHandler.dealCard(3, currentSession.fetchPlayer());
+		
+		currentSession.fetchPlayer()[0].updateDeck();
+		currentSession.fetchPlayer()[1].updateDeck();
+		currentSession.fetchPlayer()[2].updateDeck();
+		
 		cmdLogger.log("Deck has been assigned as below: ");
 		cmdLogger.noTimeLog(
 				"Player 1: " + cmdLogger.convertCardListToString(currentSession.fetchPlayer()[0].fetchDeck()));

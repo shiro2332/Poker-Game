@@ -28,7 +28,7 @@ public class Main extends Application {
             
             stage.show();
             cmdLogger.log("Game successfully started");
-        	bgm();
+        	//bgm();
         }
 
         catch (Exception e) {
@@ -40,7 +40,7 @@ public class Main extends Application {
     Media media = null;
     public void bgm() {
     	try {
-            media = new Media(Paths.get("instrumental.mp3").toUri().toString());
+            media = new Media(Paths.get("bgm_inGame.mp3").toUri().toString());
             mediaPlayer = new MediaPlayer(media);
             Runnable onEnd = new Runnable() {
                 @Override

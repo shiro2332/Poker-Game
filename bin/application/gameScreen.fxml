@@ -144,5 +144,20 @@
             <Font name="Segoe UI" size="64.0" />
          </font>
       </Label>
+      <Label fx:id="p1Win" layoutX="986.0" layoutY="157.0" prefHeight="29.0" prefWidth="246.0" textFill="GOLD">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="p2Win" layoutX="986.0" layoutY="340.0" prefHeight="29.0" prefWidth="246.0" textFill="GOLD">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="p3Win" layoutX="986.0" layoutY="515.0" prefHeight="29.0" prefWidth="246.0" textFill="GOLD">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

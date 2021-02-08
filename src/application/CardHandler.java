@@ -46,10 +46,6 @@ public class CardHandler {
 			}
 		}
 		
-		for (int i = 0; i < playerCount; i++) {
-			playerList[i].updateDeck();
-		}
-		
 		cmdLogger.log("Deck remains " + deck.size() + " cards");
 		cmdLogger.noTimeLog("Deck remains card : " + cmdLogger.convertDeckToString(deck));
 	}

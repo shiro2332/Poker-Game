@@ -1,6 +1,6 @@
 package application;
 
-class Card implements Comparable<Card>{
+class Card {
 	private String suit;
 	private String face;
 	private int point;
@@ -26,6 +26,14 @@ class Card implements Comparable<Card>{
 	    return suit + face;
 	}
 	
+	public String fetchSuit(){
+	    return suit;
+	}
+	
+	public String fetchFace(){
+	    return face;
+	}
+	
 	public String fetchImageURL(){
 	    return imageURL;
 	}
@@ -33,9 +41,4 @@ class Card implements Comparable<Card>{
 	public int fetchPoint() {
 		return point;
 	}
-	
-	@Override
-    public int compareTo(Card o) {
-        return this.fetchCard().compareTo(o.fetchCard());
-    }
 }

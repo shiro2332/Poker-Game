@@ -22,6 +22,7 @@ public class mainMenuController {
     @FXML
     void onStartButtonClick(ActionEvent event) {
     	cmdLogger.logActionByUser("start button clicked", "mainMenuController");
+    	cmdLogger.log("===============================Event updated===============================");
     	if(player1Name.getText().equals("") || player2Name.getText().equals("") || player3Name.getText().equals("")) {
     		cmdLogger.log("Entry field missing from user at mainMenuController");
     	} else {
