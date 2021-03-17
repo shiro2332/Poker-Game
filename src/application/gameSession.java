@@ -1,3 +1,4 @@
+//Optimized
 package application;
 
 public class gameSession {
@@ -17,8 +18,8 @@ public class gameSession {
 		return session;
 	}
 	
-	public void setPlayer(Player... args) {
-		playerList = new Player[3];
+	public void setPlayer(int numOfPlayer, Player... args) {
+		playerList = new Player[numOfPlayer];
 		for(int i = 0; i < args.length; i++) {
 			playerList[i] = args[i];
 		}
@@ -26,9 +27,5 @@ public class gameSession {
 	
 	public Player[] fetchPlayer() {
 		return playerList;
-	}
-	
-	public void setSession(gameSession session) {
-		gameSession.session = session;
 	}
 }

@@ -1,3 +1,4 @@
+//Optimized11222212
 package application;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ public class CardHandler {
 	String[] cardType = { "Diamonds", "Clubs", "Hearts", "Spades" };
 	String[] cardValue = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "X", "J", "Q", "K" };
 	
-	private void CreateDeck() {
+	private void createDeck() {
 		for (int i = 0; i < cardType.length; i++) {
 			for (int j = 0; j < cardValue.length; j++) {
 				deck.push(new Card(cardType[i], cardValue[j]));
@@ -19,13 +20,13 @@ public class CardHandler {
 		}
 		
 		cmdLogger.log("Deck contains " + deck.size() + " cards");
-		cmdLogger.noTimeLog("Deck contains card : " + cmdLogger.convertDeckToString(deck));
+		cmdLogger.noTimeLog("Deck contains card : " + cmdLogger.deckToString(deck));
 		
 		Collections.shuffle(deck); //Shuffle deck
 	}
 	
-	public void dealCard(int playerCount, Player[] playerList) {
-		CreateDeck();
+	public void distributeDeckToPlayers(int playerCount, Player[] playerList) {
+		createDeck();
 		
 		for (int i = 0; i < playerCount; i++) {
 			playerList[i].fetchDeck().clear();
@@ -47,6 +48,6 @@ public class CardHandler {
 		}
 		
 		cmdLogger.log("Deck remains " + deck.size() + " cards");
-		cmdLogger.noTimeLog("Deck remains card : " + cmdLogger.convertDeckToString(deck));
+		cmdLogger.noTimeLog("Deck remains card : " + cmdLogger.deckToString(deck));
 	}
 }

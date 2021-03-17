@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #272722;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gameController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #272722;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gameController">
    <children>
       <Label layoutX="498.0" layoutY="27.0" text="Round" textFill="GOLD">
          <font>
@@ -34,87 +33,27 @@
             <Font name="Segoe UI" size="36.0" />
          </font>
       </JFXButton>
-      <ImageView fx:id="player1card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card2" fitHeight="110.0" fitWidth="100.0" layoutX="295.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card3" fitHeight="110.0" fitWidth="100.0" layoutX="389.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card4" fitHeight="110.0" fitWidth="100.0" layoutX="483.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card5" fitHeight="110.0" fitWidth="100.0" layoutX="577.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
+      <ImageView fx:id="player1card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card2" fitHeight="110.0" fitWidth="100.0" layoutX="295.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card3" fitHeight="110.0" fitWidth="100.0" layoutX="389.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card4" fitHeight="110.0" fitWidth="100.0" layoutX="483.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card5" fitHeight="110.0" fitWidth="100.0" layoutX="577.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
       <Label layoutX="716.0" layoutY="157.0" prefHeight="43.0" prefWidth="106.0" text="Score" textFill="GOLD">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
       </Label>
-      <Label fx:id="p1Score" layoutX="870.0" layoutY="157.0" prefHeight="29.0" prefWidth="246.0" text="#" textFill="GOLD">
+      <Label fx:id="p1Score" layoutX="870.0" layoutY="157.0" prefHeight="43.0" prefWidth="86.0" text="#" textFill="GOLD">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
@@ -124,17 +63,17 @@
             <Font name="Segoe UI" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="716.0" layoutY="515.0" prefHeight="43.0" prefWidth="106.0" text="Score" textFill="GOLD">
+      <Label fx:id="p3TextLabel" layoutX="716.0" layoutY="515.0" prefHeight="43.0" prefWidth="106.0" text="Score" textFill="GOLD">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
       </Label>
-      <Label fx:id="p2Score" layoutX="870.0" layoutY="340.0" prefHeight="29.0" prefWidth="246.0" text="#" textFill="GOLD">
+      <Label fx:id="p2Score" layoutX="870.0" layoutY="340.0" prefHeight="43.0" prefWidth="100.0" text="#" textFill="GOLD">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
       </Label>
-      <Label fx:id="p3Score" layoutX="870.0" layoutY="516.0" prefHeight="29.0" prefWidth="246.0" text="#" textFill="GOLD">
+      <Label fx:id="p3Score" layoutX="870.0" layoutY="516.0" prefHeight="43.0" prefWidth="100.0" text="#" textFill="GOLD">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
@@ -155,6 +94,26 @@
          </font>
       </Label>
       <Label fx:id="p3Win" layoutX="986.0" layoutY="515.0" prefHeight="29.0" prefWidth="246.0" textFill="GOLD">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="p1TotalScore" layoutX="1124.0" layoutY="157.0" prefHeight="43.0" prefWidth="86.0" text="#" textFill="GOLD">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="p2TotalScore" layoutX="1124.0" layoutY="340.0" prefHeight="43.0" prefWidth="86.0" text="#" textFill="GOLD">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="p3TotalScore" layoutX="1124.0" layoutY="515.0" prefHeight="43.0" prefWidth="86.0" text="#" textFill="GOLD">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="1038.0" layoutY="83.0" prefHeight="33.0" prefWidth="204.0" text="Total Score" textFill="GOLD">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>

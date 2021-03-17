@@ -27,7 +27,7 @@ public class gameHandler {
 		}
 		
 		cmdLogger.log("All player deck for round " + currentRound + " has been sorted by their suit and face.");
-		cmdLogger.noTimeLog("Suit is sorted according to this order : Diamonds, CLubs, Hearts, Spades");
+		cmdLogger.noTimeLog("Suit is sorted according to this order : Diamonds, Clubs, Hearts, Spades");
 		cmdLogger.noTimeLog("Face is sorted according to this order : A, 2, 3, 4, 5, 6, 7, 8, 9, X, J, Q, K");
 	}
 	
@@ -64,8 +64,8 @@ public class gameHandler {
 				cmdLogger.log("Diamond = " + diamondScore + " Club = " + clubScore + " Heart = " + heartScore + " Spade =  " + spadeScore);
 			}
 			
-			currentSession.fetchPlayer()[i].setCurrentGameScore(max(spadeScore, heartScore, clubScore, diamondScore));
-			cmdLogger.log("Current player highest score = " + currentSession.fetchPlayer()[i].fetchCurrentGameScore());
+			currentSession.fetchPlayer()[i].currentGameScore = max(spadeScore, heartScore, clubScore, diamondScore);
+			cmdLogger.log("Current player highest score = " + currentSession.fetchPlayer()[i].currentGameScore);
 			spadeScore = 0;
 			heartScore = 0;
 			clubScore = 0;

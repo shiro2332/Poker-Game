@@ -1,3 +1,4 @@
+//Optimized
 package application;
 
 import java.time.LocalDateTime;
@@ -6,9 +7,10 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 public class cmdLogger {
+	static DateTimeFormatter formatDT = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+	static LocalDateTime timeNow;
 	public static void log(String operationPerformed) {
-		DateTimeFormatter formatDT = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-		LocalDateTime timeNow = LocalDateTime.now();
+		timeNow = LocalDateTime.now();
 		System.out.println(timeNow.format(formatDT) + " | " + operationPerformed);
 	}
 	
@@ -17,24 +19,21 @@ public class cmdLogger {
 	}
 	
 	public static void logError(Exception e) {
-		DateTimeFormatter formatDT = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-		LocalDateTime timeNow = LocalDateTime.now();
+		timeNow = LocalDateTime.now();
 		System.out.println(timeNow.format(formatDT) + " | Error caused by " + e);
 	}
 	
 	public static void logActionByUser(String userAction, String currentController) {
-		DateTimeFormatter formatDT = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-		LocalDateTime timeNow = LocalDateTime.now();
+		timeNow = LocalDateTime.now();
 		System.out.println(timeNow.format(formatDT) + " | User has performed " + userAction + " on " + currentController);
 	}
 	
 	public static void logErrorShownToUser(String userError, String currentPage) {
-		DateTimeFormatter formatDT = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-		LocalDateTime timeNow = LocalDateTime.now();
+		timeNow = LocalDateTime.now();
 		System.out.println(timeNow.format(formatDT) + " | User has performed " + userError + " on " + currentPage);
 	}
 	
-	public static String convertCardListToString(ArrayList<Card> playerDeck) {
+	public static String cardListToString(ArrayList<Card> playerDeck) {
 		String cardListInString = "";
 		int x = 0;
 		for (int i = 0; i < playerDeck.size(); i++) {
@@ -50,12 +49,12 @@ public class cmdLogger {
 		return cardListInString;
 	}
 	
-	public static String convertDeckToString(Stack<Card> deck) {
+	public static String deckToString(Stack<Card> deck) {
 		String deckInStrng = "\n";
 		int x = 0;
 		for (int i = 0; i < deck.size(); i++) {
 			if(x == 12) {
-				deckInStrng += deck.get(i).fetchCard() + "\n ";
+				deckInStrng += deck.get(i).fetchCard() + "\n";
 				x = 0;
 			} else {
 				deckInStrng += deck.get(i).fetchCard() + " ";

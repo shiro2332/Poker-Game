@@ -1,10 +1,12 @@
+//Optimized
+
 package application;
 
 import java.util.ArrayList;
 
 public class Player {
 	private String userName;
-	private int currentGameScore = 0;
+	public int currentGameScore = 0;
 	private int totalGameScore = 0;
 	private ArrayList<Card> deck = new ArrayList<Card>(); //For CMD uses
 	private ArrayList<ArrayList<Card>> actualDeck = new ArrayList<ArrayList<Card>>();
@@ -15,14 +17,6 @@ public class Player {
 
 	public String fetchUserName() {
 		return userName;
-	}
-	
-	public int fetchCurrentGameScore() {
-		return currentGameScore;
-	}
-
-	public void setCurrentGameScore(int score) {
-		this.currentGameScore = score;
 	}
 	
 	public void winGame(int currentGameScore) {

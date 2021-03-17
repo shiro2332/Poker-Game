@@ -1,3 +1,5 @@
+//Optimized
+
 package application;
 import java.io.IOException;
 
@@ -28,7 +30,7 @@ public class mainMenuController {
     	} else {
     		//Save username to current game session
     		gameSession currentSession = gameSession.getSession();
-    		currentSession.setPlayer(new Player(player1Name.getText()), new Player(player2Name.getText()), new Player(player3Name.getText()));
+    		currentSession.setPlayer(3, new Player(player1Name.getText()), new Player(player2Name.getText()), new Player(player3Name.getText()));
     		SceneHandler sceneHandler = new SceneHandler("lobby.fxml", (Stage) ((Node) event.getSource()).getScene().getWindow());
     		try {
     			

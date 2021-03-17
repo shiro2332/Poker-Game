@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -39,81 +38,21 @@
             <Font name="Segoe UI" size="36.0" />
          </font>
       </JFXButton>
-      <ImageView fx:id="player1card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player1card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player2card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card2" fitHeight="110.0" fitWidth="100.0" layoutX="295.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card3" fitHeight="110.0" fitWidth="100.0" layoutX="389.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card4" fitHeight="110.0" fitWidth="100.0" layoutX="483.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="player3card5" fitHeight="110.0" fitWidth="100.0" layoutX="577.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Documents/application/back1.png" />
-         </image>
-      </ImageView>
+      <ImageView fx:id="player1card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card2" fitHeight="110.0" fitWidth="100.0" layoutX="296.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card3" fitHeight="110.0" fitWidth="100.0" layoutX="390.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card4" fitHeight="110.0" fitWidth="100.0" layoutX="484.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player2card5" fitHeight="110.0" fitWidth="100.0" layoutX="578.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card1" fitHeight="110.0" fitWidth="100.0" layoutX="203.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card2" fitHeight="110.0" fitWidth="100.0" layoutX="295.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card3" fitHeight="110.0" fitWidth="100.0" layoutX="389.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card4" fitHeight="110.0" fitWidth="100.0" layoutX="483.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player3card5" fitHeight="110.0" fitWidth="100.0" layoutX="577.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true" />
       <JFXButton buttonType="RAISED" defaultButton="true" layoutX="1022.0" layoutY="145.0" onAction="#onNextDeckShowPlayer1" prefHeight="67.0" prefWidth="177.0" ripplerFill="#ffffff00" style="-fx-background-color: #FFD700;" text="Next" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="36.0" />
@@ -129,7 +68,7 @@
             <Font name="Segoe UI" size="36.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="1022.0" layoutY="504.0" onAction="#onNextDeckShowPlayer3" prefHeight="67.0" prefWidth="177.0" ripplerFill="#ffffff00" style="-fx-background-color: #FFD700;" text="Next" textFill="WHITE">
+      <JFXButton fx:id="p3NextButton" buttonType="RAISED" defaultButton="true" layoutX="1022.0" layoutY="504.0" onAction="#onNextDeckShowPlayer3" prefHeight="67.0" prefWidth="177.0" ripplerFill="#ffffff00" style="-fx-background-color: #FFD700;" text="Next" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
@@ -139,7 +78,7 @@
             <Font name="Segoe UI" size="36.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="752.0" layoutY="503.0" onAction="#onBackDeckShowPlayer3" prefHeight="67.0" prefWidth="177.0" ripplerFill="#ffffff00" style="-fx-background-color: #FFD700;" text="Back" textFill="WHITE">
+      <JFXButton fx:id="p3BackButton" buttonType="RAISED" defaultButton="true" layoutX="752.0" layoutY="503.0" onAction="#onBackDeckShowPlayer3" prefHeight="67.0" prefWidth="177.0" ripplerFill="#ffffff00" style="-fx-background-color: #FFD700;" text="Back" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="36.0" />
          </font>
