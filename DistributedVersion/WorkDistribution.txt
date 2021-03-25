@@ -1,0 +1,9 @@
+MEMBER 1: 1191100210 CHEK VINCENT
+MEMBER 2: 1191100636 THAM KENG THEEN
+
+TASK DISTRIBUTION
+-----------------
+1. Sorting and determining the highest point - Tham Keng Theen
+2. Dealing of cards and identify the winner in each round - Chek Vincent
+3. Sum of score and overall flow of program - Tham Keng Theen & Check Vincent
+4. GUI - Tham Keng Theen

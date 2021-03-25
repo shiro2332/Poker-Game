@@ -1,0 +1,54 @@
+CONTENTS OF THIS FILE
+---------------------
+
+ * HOW IT IS WRITTEN
+ * EXECUTION
+
+HOW IT IS WRITTEN
+------------
+This program is written with following language:
+ * JavaSDK 15.0.1 (https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)
+
+This program is written with following third-party libraries:
+ * JFoenix 9.0.10 (https://github.com/jfoenixadmin/JFoenix)
+ * JavaFX 15.0.1 (https://gluonhq.com/products/javafx/)
+
+This program is written with following IDE:
+ * Java : Eclipse (https://www.eclipse.org/downloads/)
+ * FXML : SceneBuilder (https://gluonhq.com/products/scene-builder/)
+
+#NOTE: The program is compiled with Java 10 (Major Version 54), thus as long as Java Runtime Enviroment is above Major Version 54, the program should be able to run by using the .bat file included.
+
+#NOTE: JFoenix 9.0.10 is only needed if compiling the code on your own IDE.
+#NOTE: JavaFX 15.0.1 is only needed if compiling the code on your own IDE.
+
+EXECUTION
+---------------
+#IMPORTANT: Whenever you see JAVAFX_PATH_HERE_LIB, it means that replace it with the address of where your javafx lib is stored. Example: "C:\Users\thamk\Documents\Extension\javafx-sdk-15.0.1\lib"
+
+1. Using .bat included
+   - Double click Run.bat, the program should start immediately.
+
+2. Using CMD
+   - Open Command Prompt in the directory, run the following command "java -jar --module-path "JAVAFX_PATH_HERE_LIB" --add-modules=javafx.controls,javafx.fxml Game.jar" and the program should start immediately.
+
+3. Using Eclipse
+   a. Installing extension required
+      - Download libraries needed listed in HOW IT IS WRITTEN
+      - Install e(fx)clipse 3.6.0 in Eclipse Marketplace
+
+   b. Configuring Buildpath
+      - Right click the project, choose Build Path then Configure Build Path.
+      - In Java Build Path, choose libraries.
+      - Click Classpath, then click Add External JARS..
+      - Add all .jar files under Javafx/lib and jfoenix .jar.
+
+   c. Configuring Run-as arguments
+      - Click the arrow next to run icon and choose Run configurations
+      - In Java Application under Main, choose Arguments.
+      - Add the following argument in VM arguments "--module-path "JAVAFX_PATH_HERE_LIB" --add-modules=javafx.controls,javafx.fxml,javafx.media"
+      - Click Apply and close.
+
+   The program should be able to run after the steps above.
+
+ 
