@@ -1,0 +1,1 @@
+java -jar --module-path "C:\Users\thamk\Documents\Extension\javafx-sdk-15.0.1\lib" --add-modules=javafx.controls,javafx.fxml,javafx.media Game.jar
